@@ -1,0 +1,16 @@
+
+
+<%- include("partials/header.ejs") %>
+
+
+<div class="form-container">
+    <form action="/edit/<%= post.id %>" method="post" class="form-info">
+      <input type="text" class="hed-btn" placeholder="write your Heading here" name="heading" value="<%=post.userhed %>">
+      <textarea class="input-button" placeholder="write your blogg here " name="write"><%= post.usercontent%></textarea>
+      <button class="btn" type="submit"> Save <i class="fa-solid fa-download"></i></button> 
+      <!-- <input type="button"submit class="btn" value="./Submit">submit   i class="f<a-solid fa-arrow-right">> -->
+    </form>
+ </div>
+
+
+ <%-include("partials/footer.ejs")  %>

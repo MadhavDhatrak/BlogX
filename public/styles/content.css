@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap");
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+
+}
+body{
+    background-color: whitesmoke;
+}
+
+/* .content{
+    height:80vh;
+   
+}
+
+.blog-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2px;
+    height:20vh;
+    width: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgb(0,0,0,0.1);
+
+    
+
+
+} */
+
+
+/* Container for all blog posts */
+.content {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Ensures child elements stretch to fit container */
+    align-items: start;
+    margin-left: 30px;
+    margin-top: 10Px;
+}
+
+/* Individual blog post container */
+.blog-content {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    width: 100%; /* Makes the div take up the full width of the parent container */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+/* Ensure h1 and p elements don't exceed the container's width */
+.blog-content h1, 
+.blog-content p {
+    margin: 0; /* Reset default margins */
+    word-wrap: break-word; /* Allows long words to wrap onto the next line */
+}
+
+
+.btn{
+    display: flex;
+    gap: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+    justify-content:start;
+
+}
+.edit-btn{
+    padding: 11px 25px ;
+    font-size: 14px;
+    border: none;
+    border-radius: 50px;
+    gap:10px;
+    background: linear-gradient(270deg,#ff994f,#fa6d86);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgb(0,0,0,0.1);
+    font-weight: bold;
+
+}
+
+.delete-btn{
+    padding: 11px 25px ;
+    font-size: 14px;
+    border: none;
+    border-radius: 50px;
+    gap:10px;
+    background: linear-gradient(270deg,#ff994f,#fa6d86);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgb(0,0,0,0.1);
+    font-weight: bold;
+
+}
+a{
+ color: black;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/content.css">
+</head>
+<body>
+    <ul>
+     <% posts.forEach(p => { %>
+                 
+     <div class="content">
+        <div class="blog-content">
+            <h2><%= p.userhed %></h2>
+            <p><%= p.usercontent%></p>
+        </div>
+        <div class="btn">
+            <a href="/edit/<%= p.id %>" class="edit-btn">Edit <i class="fa-solid fa-file-pen"></i></a>
+            <form action="/delete/<%= p.id %>" method="POST" style="display:inline;">
+                <button type="submit" class="delete-btn">Delete  <i class="fa-solid fa-trash"></i></button>
+            </form>
+            <a href="/new" class="edit-btn"> wtite new Blog  <i class="fa-solid fa-pen"></i></a>
+        </div>
+    </div>
+        <% }) %>
+    </ul>
+
+
+    <!-- <div class="content">
+        <div class="blog-content"> 
+            <h2><></h2>
+            <p></p>
+        </div>
+        <div class="btn">
+            <a href="/edit/" class="edit-btn">Edit</a>
+            <form action="/delete/" method="POST" style="display:inline;">
+                <button type="submit" class="delete-btn">Delete</button>
+            </form>
+        </div>
+    </div> -->
+</body>
+</html>
