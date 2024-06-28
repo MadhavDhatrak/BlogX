@@ -106,6 +106,17 @@ body{
     font-weight: bold;
 
 }
+h3{
+    font-size: 0.85rem;
+    margin-top:30px;
+}
+
+#new{
+  width:13%;   
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 10px;
+}
 a{
  color: black;
 }
