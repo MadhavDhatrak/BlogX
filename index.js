@@ -45,6 +45,11 @@ app.post('/edit/:id', (req, res) => {
     }
 });
 
+app.get("/view",(req,res)=>{
+    const post = posts.find(p => p.id === req.params.id);
+     res.render("view.ejs",{post,posts});
+});
+
 app.get("/new",(req,res)=>{
      res.redirect("/");
 });
